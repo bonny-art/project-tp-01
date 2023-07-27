@@ -20,8 +20,8 @@
     />
 
     
-    <script type="module" crossorigin src="/project-tp-01/assets/index-c84c356b.js"></script>
-    <link rel="stylesheet" href="/project-tp-01/assets/index-1d2d17be.css">
+    <script type="module" crossorigin src="/project-tp-01/assets/index-03978cf8.js"></script>
+    <link rel="stylesheet" href="/project-tp-01/assets/index-6abf5ba0.css">
   </head>
   <body>
     <!-- Krystyna Tokarieva-->
@@ -31,8 +31,10 @@
       <!-- Andrii Koliadenko -->
       <p class="hero">hero</p>
 
+
       <!-- Ivan Imenynnyk -->
       <p class="about">about</p>
+
 
       <!-- Andy Dov -->
       <section class="section" id="yacht">
@@ -426,18 +428,86 @@
 
       <p class="services">services</p>
 
+
       <!-- Oleksandra Skrypko -->
       <p class="rent">rent</p>
 
+
       <!-- Vanya Kravchuk -->
       <p class="reviews">reviews</p>
+
+
+      <!-- Oleksandra Skrypko -->
+      <!-- Із закоментованого рядка нижче беремо тільки клас, та додатково додаємо його до своєї кнопки відправки форми -->
+<!-- <a href="#" class="js-open-modal" data-modal="1">Открыть окно 1</a> -->
+
+<!-- Modal window - тут робимо розмітку модалки-->
+<div class="modal" data-modal="1">
+  <!--   Svg іконка для закриття модалки (заміняєм на іконку зі спрайту)  -->
+  <svg
+    class="modal__cross js-modal-close"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+    />
+  </svg>
+  <!-- Вміст модалки (додаємо)-->
+</div>
+
+<!-- Подложка под модальным окном -->
+<!-- Знаходиться у файлі overlay.html -->
 
     </main>
     <!-- Artem Chuhreiev -->
     <p class="footer">footer</p>
 
 
+    <!-- Oleksandra Skrypko -->
+    <!-- Подложка под модальным окном -->
+<div class="overlay js-overlay-modal"></div>
+
+
+    <!-- Krystyna Tokarieva-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu">
+    <svg
+      fill="currentColor"
+      viewBox="0 0 20 20"
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+        clip-rule="evenodd"
+      ></path>
+    </svg>
+  </button>
+
+  <ul class="mobile-menu">
+    <li><a href="" class="link">About</a></li>
+    <li><a href="" class="link">Products</a></li>
+    <li><a href="" class="link">Contacts</a></li>
+    <li><a href="" class="link">Career</a></li>
+  </ul>
+</div>
+
+
     
+
+    <!-- Slider -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
