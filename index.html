@@ -20,8 +20,8 @@
     />
 
     
-    <script type="module" crossorigin src="/project-tp-01/assets/index-9a3bf484.js"></script>
-    <link rel="stylesheet" href="/project-tp-01/assets/index-df05b68e.css">
+    <script type="module" crossorigin src="/project-tp-01/assets/index-08cd37e6.js"></script>
+    <link rel="stylesheet" href="/project-tp-01/assets/index-2ca55681.css">
   </head>
   <body>
     <!-- Krystyna Tokarieva-->
@@ -774,8 +774,51 @@
 
 
       <!-- Oleksandra Skrypko -->
-      <p class="rent">rent</p>
+      <!-- Rent Section -->
+<section id="rent">
+    <div class="container rent-container">
+        <h2 class="rent-txt">Rent a yacht now</h2>
+        <div class="rent-image-container">
+            <img src="../img/rent/rentyaht.png" alt="Yaht">
+        </div>
+        <form id="contactForm">
+            <div class="rent-form-row">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="rent-form-row">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="rent-form-row">
+                <label for="phoneNumber">Phone number</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            </div>
+            <div class="rent-form-row">
+                <label for="comment">Comment</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+            </div>
+            <button class="rent-btn rent-button-flex" type="submit" data-modal-open>Send</button>
+        </form>
+    </div>
 
+<!-- Rent Modal -->
+<div id="myModal" class="rent-modal">
+    <div class="rent-modal-content">
+        <button type="button" data-modal-close class="close-rent-button">
+            <svg width="8" height="8" class="rent-button-icon">
+                <use href="../img/icons.svg#close"></use>
+            </svg>
+        </button>
+        <img src="../img/rent/rentmodal.png" alt="Yaht modal window" class="rent-modal-image" />
+        <h2>Thank you</h2>
+        <p>Thank you for choosing Yacht Adventures, your booking details have been received and our team will be in touch shortly
+        to confirm your reservation and provide any additional information or assistance you may need.</p>
+    </div>
+</div>
+</div>
+
+</section>
 
       <!-- Vanya Kravchuk -->
       <section>
