@@ -20,8 +20,8 @@
     />
 
     
-    <script type="module" crossorigin src="/project-tp-01/assets/index-818891d3.js"></script>
-    <link rel="stylesheet" href="/project-tp-01/assets/index-b80d44ca.css">
+    <script type="module" crossorigin src="/project-tp-01/assets/index-e36258a4.js"></script>
+    <link rel="stylesheet" href="/project-tp-01/assets/index-d564277e.css">
   </head>
   <body>
     <!-- Krystyna Tokarieva-->
@@ -48,7 +48,7 @@
         aria-controls="mobile-menu"
       >
         <svg class="menu-toggle-icon" width="20" height="14">
-          <use href="/project-tp-01/assets/icons-046e52cb.svg#menu"></use>
+          <use href="/project-tp-01/assets/icons-fc90d3bd.svg#menu"></use>
         </svg>
       </button>
     </div>
@@ -724,50 +724,41 @@
 
       <!-- Oleksandra Skrypko -->
       <!-- Rent Section -->
+<div class="center">
+
 <section id="rent">
-    <div class="container rent-container">
+    <div class="container-r rent-container">
+        <div class="img-box">
         <h2 class="rent-txt">Rent a yacht now</h2>
-        <div class="rent-image-container">
-            <img src="../img/rent/rentyaht.png" alt="Yaht">
+            <img class="rent-image-container" src="/project-tp-01/assets/rentyaht-9ce296d5.png" alt="Yaht">
         </div>
-        <form id="contactForm">
+<!-- Rent Form -->
+        <form id="contactForm" class="rent-form">
+            <div class="form-box">
+               
             <div class="rent-form-row">
-                <label for="fullName">Full Name</label>
-                <input type="text" id="fullName" name="fullName" required>
+            <input type="text" placeholder="Full Name">
             </div>
             <div class="rent-form-row">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" placeholder="Email">
             </div>
             <div class="rent-form-row">
-                <label for="phoneNumber">Phone number</label>
-                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                <input type="number" placeholder="Phone Number">
             </div>
             <div class="rent-form-row">
-                <label for="comment">Comment</label>
-                <textarea id="comment" name="comment" rows="4" required></textarea>
+                <input type="text" placeholder="Comment">
             </div>
-            <button class="rent-btn rent-button-flex" type="submit" data-modal-open>Send</button>
+            <button class="rent-btn rent-button-flex" type="submit" js-open-modal>Send
+                <svg width="18" height="8.66" class="rent-button-icon">
+                    <use href="/project-tp-01/assets/icons-fc90d3bd.svg#arrow-right"></use>
+                </svg>
+            </button>
+            </div>
         </form>
     </div>
-
-<!-- Rent Modal -->
-<div id="myModal" class="rent-modal">
-    <div class="rent-modal-content">
-        <button type="button" data-modal-close class="close-rent-button">
-            <svg width="8" height="8" class="rent-button-icon">
-                <use href="../img/icons.svg#close"></use>
-            </svg>
-        </button>
-        <img src="../img/rent/rentmodal.png" alt="Yaht modal window" class="rent-modal-image" />
-        <h2>Thank you</h2>
-        <p>Thank you for choosing Yacht Adventures, your booking details have been received and our team will be in touch shortly
-        to confirm your reservation and provide any additional information or assistance you may need.</p>
-    </div>
-</div>
-</div>
-
+<script src="./js/modal.js"></script>
 </section>
+</div>
 
       <!-- Vanya Kravchuk -->
       <section id="reviews">
@@ -854,6 +845,24 @@
 <!-- Подложка под модальным окном -->
 <!-- Знаходиться у файлі overlay.html -->
 
+<!-- Rent Modal -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="rent-modal-content">
+    <button type="button" class="close-rent-button" js-modal-close>
+      <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <use href="/project-tp-01/assets/icons-fc90d3bd.svg#close"></use>
+      </svg>
+    </button>
+    <div class="thumb-rent">
+    <img class="rent-modal-image" src="/project-tp-01/assets/rentmodal-c07a812f.png" alt="Yaht modal window" width="338" height="198"/>
+    </div>
+    <h2 class="modal-h">Thank you</h2>
+    <p class="rent-modal-txt">Thank you for choosing Yacht Adventures, your booking details have been received and our team will be in touch shortly
+    to confirm your reservation and provide any additional information or assistance you may need.</p>
+  </div>
+</div>
+
+
     </main>
     <!-- Artem Chuhreiev -->
     <footer class="footer">
@@ -939,7 +948,7 @@
     >
     <button class="menu-toggle js-close-menu">
       <svg class="menu-close" width="24" height="24">
-        <use href="/project-tp-01/assets/icons-046e52cb.svg#close"></use>
+        <use href="/project-tp-01/assets/icons-fc90d3bd.svg#close"></use>
       </svg>
     </button>
   </div>
@@ -964,7 +973,7 @@
     <!-- Button scrolling to top -->
     <button class="scroll-button" id="scrollToTopButton">
   <svg class="scroll-icon" width="8" height="16">
-    <use href="/project-tp-01/assets/icons-046e52cb.svg#arrow-top"></use>
+    <use href="/project-tp-01/assets/icons-fc90d3bd.svg#arrow-top"></use>
   </svg>
 </button>
 

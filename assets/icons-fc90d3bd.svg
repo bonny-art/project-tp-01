@@ -14,6 +14,7 @@
         <symbol id="close" viewBox="0 0 32 32">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.733" d="M24 8 8 24M8 8l16 16" />
         </symbol>
+       
 
         <!-- Arrows -->
         <symbol id="arrow-left" viewBox="0 0 58 32">
@@ -25,6 +26,7 @@
         <symbol id="arrow-top" viewBox="0 0 17 32">
             <path d="M0 9.778 8.533 0l8.533 9.778h-7.055V32H7.055V9.778H0z" />
         </symbol>
+
 
         <!-- Socials -->
         <symbol id="facebook" viewBox="0 0 18 32">
