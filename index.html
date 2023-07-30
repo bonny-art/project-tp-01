@@ -20,8 +20,8 @@
     />
 
     
-    <script type="module" crossorigin src="/project-tp-01/assets/index-0d6ac973.js"></script>
-    <link rel="stylesheet" href="/project-tp-01/assets/index-aba3b678.css">
+    <script type="module" crossorigin src="/project-tp-01/assets/index-6df6baa8.js"></script>
+    <link rel="stylesheet" href="/project-tp-01/assets/index-2c13aac9.css">
   </head>
   <body>
     <!-- Krystyna Tokarieva-->
@@ -799,10 +799,8 @@
 
       <!-- Oleksandra Skrypko -->
       <!-- Rent Section -->
-<div class="center">
-
-<section id="rent">
-    <div class="container-r rent-container">
+<section id="rent" class="section">
+    <div class="container-r rent-container container">
         <div class="img-box">
         <h2 class="rent-txt">Rent a yacht now</h2>
             <img class="rent-image-container" src="/project-tp-01/assets/rentyaht-9ce296d5.png" alt="Yaht">
@@ -823,7 +821,7 @@
             <div class="rent-form-row">
                 <input type="text" placeholder="Comment">
             </div>
-            <button class="rent-btn rent-button-flex" type="submit" js-open-modal>Send
+            <button class="rent-btn rent-button-flex js-open-modal" data-modal="1" type="submit" >Send
                 <svg width="18" height="8.66" class="rent-button-icon">
                     <use href="/project-tp-01/assets/icons-fc90d3bd.svg#arrow-right"></use>
                 </svg>
@@ -833,7 +831,7 @@
     </div>
 <script src="./js/modal.js"></script>
 </section>
-</div>
+
 
       <!-- Vanya Kravchuk -->
       <section id="reviews">
@@ -899,43 +897,26 @@
 
 
       <!-- Oleksandra Skrypko -->
-      <!-- Із закоментованого рядка нижче беремо тільки клас, та додатково додаємо його до своєї кнопки відправки форми -->
-<!-- <a href="#" class="js-open-modal" data-modal="1">Открыть окно 1</a> -->
-
-<!-- Modal window - тут робимо розмітку модалки-->
+      <!-- Modal window -->
 <div class="modal" data-modal="1">
-  <!--   Svg іконка для закриття модалки (заміняєм на іконку зі спрайту)  -->
-  <svg
-    class="modal__cross js-modal-close"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-    />
-  </svg>
-  <!-- Вміст модалки (додаємо)-->
-</div>
-
-<!-- Подложка под модальным окном -->
-<!-- Знаходиться у файлі overlay.html -->
-
-<!-- Rent Modal -->
-<div class="backdrop is-hidden" data-modal>
-  <div class="rent-modal-content">
-    <button type="button" class="close-rent-button" js-modal-close>
-      <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <use href="/project-tp-01/assets/icons-fc90d3bd.svg#close"></use>
-      </svg>
-    </button>
-    <div class="thumb-rent">
-    <img class="rent-modal-image" src="/project-tp-01/assets/rentmodal-c07a812f.png" alt="Yaht modal window" width="338" height="198"/>
-    </div>
-    <h2 class="modal-h">Thank you</h2>
-    <p class="rent-modal-txt">Thank you for choosing Yacht Adventures, your booking details have been received and our team will be in touch shortly
+  <button type="button" class="close-rent-button js-modal-close">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M18 6L6 18" stroke="#F6F5EF" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M6 6L18 18" stroke="#F6F5EF" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </button>
+  <!-- Вміст модалки -->
+  <div class="thumb-rent">
+    <img class="rent-modal-image" src="/project-tp-01/assets/rentmodal-c07a812f.png" alt="Yaht modal window" width="338" height="198" />
+  </div>
+  <h2 class="modal-h">Thank you</h2>
+  <p class="rent-modal-txt">Thank you for choosing Yacht Adventures, your booking details have been received and our team
+    will be in touch shortly
     to confirm your reservation and provide any additional information or assistance you may need.</p>
   </div>
 </div>
+
+
 
 
     </main>
