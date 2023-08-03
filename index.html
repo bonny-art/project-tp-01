@@ -23,8 +23,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     
-    <script type="module" crossorigin src="/project-tp-01/assets/index-42898244.js"></script>
-    <link rel="stylesheet" href="/project-tp-01/assets/index-59b8f632.css">
+    <script type="module" crossorigin src="/project-tp-01/assets/index-3ae27422.js"></script>
+    <link rel="stylesheet" href="/project-tp-01/assets/index-bb79d98a.css">
   </head>
 
   <body>
@@ -959,152 +959,162 @@
       <!-- Rent Section -->
 <section id="rent" class="rent-yacht-section section">
   <div class="rent-container container">
-    <!-- Image  -->
-    <div class="rent-box">
-      <div class="img-box">
-        <h2 class="rent-txt">Rent a yacht now</h2>
-        <img
-          class="rent-image-container"
-          srcset="/project-tp-01/assets/img-1@1x-e8ca13e7.png , /project-tp-01/assets/img-1@2x-40effed8.png "
-          src="./img/rent/rentyaht.png"
-          alt="Yaht"
-        />
+    <div class="rent-box-all">
+      <!-- Image  -->
+      <div class="rent-box">
+        <div class="img-box">
+          <h2 class="rent-txt">Rent a yacht now</h2>
+          <img
+            class="rent-image-container"
+            srcset="/project-tp-01/assets/img-1@1x-e8ca13e7.png , /project-tp-01/assets/img-1@2x-40effed8.png "
+            src="./img/rent/rentyaht.png"
+            alt="Yaht"
+          />
+        </div>
+      </div>
+      <!-- Rent Form -->
+      <div class="rent-form-row-container">
+        <form id="contactForm" class="rent-form">
+          <div class="rent-form-row">
+            <input
+              class="rent-yacht-input"
+              type="text"
+              id="username"
+              name="username"
+              required
+            />
+            <label class="label-txt" for="username">Full name</label>
+          </div>
+          <div class="rent-form-row">
+            <input
+              class="rent-yacht-input"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+            <label class="label-txt" for="email">Email</label>
+          </div>
+          <div class="rent-form-row">
+            <input
+              class="rent-yacht-input"
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+            />
+            <label class="label-txt" for="phone">Phone number</label>
+          </div>
+          <div class="rent-form-row">
+            <textarea
+              class="text-comments"
+              type="text"
+              id="comments"
+              name="comments"
+              rows="3"
+              placeholder=""
+            >
+            </textarea>
+            <label class="label-txt2" for="comments">Comment</label>
+          </div>
+          <button
+            class="rent-btn rent-button-flex js-open-modal"
+            data-modal="1"
+            type="submit"
+          >
+            Send
+            <svg width="18" height="8.66" class="rent-button-icon">
+              <use href="/project-tp-01/assets/icons-fc90d3bd.svg#arrow-right"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </div>
-    <!-- Rent Form -->
-    <div class="rent-form-row-container">
-      <form id="contactForm" class="rent-form">
-        <div class="rent-form-row">
-          <input
-            class="rent-yacht-input"
-            type="text"
-            id="username"
-            name="username"
-            required
-          />
-          <label class="label-txt" for="username">Full name</label>
-        </div>
-        <div class="rent-form-row">
-          <input
-            class="rent-yacht-input"
-            type="email"
-            id="email"
-            name="email"
-            required
-          />
-          <label class="label-txt" for="email">Email</label>
-        </div>
-        <div class="rent-form-row">
-          <input
-            class="rent-yacht-input"
-            type="tel"
-            id="phone"
-            name="phone"
-            required
-          />
-          <label class="label-txt" for="phone">Phone number</label>
-        </div>
-        <div class="rent-form-row">
-          <textarea
-            class="text-comments"
-            type="text"
-            id="comments"
-            name="comments"
-            rows="3"
-            placeholder=""
-          >
-          </textarea>
-          <label class="label-txt2" for="comments">Comment</label>
-        </div>
-        <button
-          class="rent-btn rent-button-flex js-open-modal"
-          data-modal="1"
-          type="submit"
-        >
-          Send
-          <svg width="18" height="8.66" class="rent-button-icon">
-            <use href="/project-tp-01/assets/icons-fc90d3bd.svg#arrow-right"></use>
-          </svg>
-        </button>
-      </form>
-    </div>
+
+    <!-- Spot on bg -->
+    <div class="rent-spot"></div>
   </div>
 </section>
 
 
       <!-- Vanya Kravchuk -->
-      <section class="adventures container" id="reviews">
-  <div class="adventures-title-container">
-    <h3 class="adventures-title">
-      <span class="adventure-title-gray">Yacht Adventures</span>
-      <span class="adventures-title-item"
-        >take pride in providing the best possible service and experience to our
-        customers</span
-      >
-    </h3>
-    <p class="adventures-text">
-      Our customers have enjoyed unforgettable moments on our yachts. Don't just
-      take our word for it - read on to find out what they have to say about
-      their journey with us.
-    </p>
-  </div>
-
-  <div class="gallery-reviews">
-    <!-- Slider main container -->
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <div class="reviews-block">
-            <img
-              class="img-adventures"
-              src="/project-tp-01/assets/john_tablet@2x-1f67f780.png"
-              alt="John Wax"
-            />
-            <h4 class="reviews-name">John Wax</h4>
-            <p class="adventures-list-item-text">
-              I rented the Lagoon 620 with my family for a week-long vacation
-              and it was the best decision ever. The yacht was spacious,
-              comfortable, and luxurious, and the crew took care of everything.
-            </p>
+      <section class="adventures" id="reviews">
+  <div class="reviews-container container">
+    <div class="adventures-title-container">
+      <h3 class="adventures-title">
+        <span class="adventure-title-gray">Yacht Adventures</span>
+        <span class="adventures-title-item"
+          >take pride in providing the best possible service and experience to
+          our customers</span
+        >
+      </h3>
+      <p class="adventures-text">
+        Our customers have enjoyed unforgettable moments on our yachts. Don't
+        just take our word for it - read on to find out what they have to say
+        about their journey with us.
+      </p>
+    </div>
+    <div class="gallery-reviews">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="reviews-block">
+              <img
+                class="img-adventures"
+                src="/project-tp-01/assets/john_tablet@2x-1f67f780.png"
+                alt="John Wax"
+              />
+              <h4 class="reviews-name">John Wax</h4>
+              <p class="adventures-list-item-text">
+                I rented the Lagoon 620 with my family for a week-long vacation
+                and it was the best decision ever. The yacht was spacious,
+                comfortable, and luxurious, and the crew took care of
+                everything.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="reviews-block">
-            <img
-              class="img-adventures"
-              src="/project-tp-01/assets/victoria_tablet@2x-f3a51b55.png"
-              alt="Victoria Romashenko"
-            />
-            <h4 class="reviews-name">Victoria Romashenko</h4>
-            <p class="adventures-list-item-text">
-              The Sunseeker Manhattan 66 was the perfect choice for our romantic
-              getaway. The yacht was beautifully designed, with all the
-              amenities we needed, and the crew was attentive and friendly.
-            </p>
+          <div class="swiper-slide">
+            <div class="reviews-block">
+              <img
+                class="img-adventures"
+                src="/project-tp-01/assets/victoria_tablet@2x-f3a51b55.png"
+                alt="Victoria Romashenko"
+              />
+              <h4 class="reviews-name">Victoria Romashenko</h4>
+              <p class="adventures-list-item-text">
+                The Sunseeker Manhattan 66 was the perfect choice for our
+                romantic getaway. The yacht was beautifully designed, with all
+                the amenities we needed, and the crew was attentive and
+                friendly.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="reviews-block">
-            <img
-              class="img-adventures"
-              src="/project-tp-01/assets/ihor_tablet@2x-e4487c30.png"
-              alt="Ihor Trachuk"
-            />
-            <h4 class="reviews-name">Ihor Trachuk</h4>
-            <p class="adventures-list-item-text">
-              The Azimut 80 was the most luxurious yacht I've ever been on. The
-              cabins were spacious and elegant, and the outdoor areas were
-              perfect for relaxing and entertaining. Worth every penny!
-            </p>
+          <div class="swiper-slide">
+            <div class="reviews-block">
+              <img
+                class="img-adventures"
+                src="/project-tp-01/assets/ihor_tablet@2x-e4487c30.png"
+                alt="Ihor Trachuk"
+              />
+              <h4 class="reviews-name">Ihor Trachuk</h4>
+              <p class="adventures-list-item-text">
+                The Azimut 80 was the most luxurious yacht I've ever been on.
+                The cabins were spacious and elegant, and the outdoor areas were
+                perfect for relaxing and entertaining. Worth every penny!
+              </p>
+            </div>
           </div>
         </div>
       </div>
+      <div class="swiper-pagination"></div>
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
     </div>
-    <div class="swiper-pagination"></div>
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
+    <!-- Spot on bg -->
+    <div class="reviews-spot"></div>
   </div>
 </section>
 
