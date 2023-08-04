@@ -51,6 +51,8 @@
   border: 1px solid var(--light-green);
 }
 
+
+
 /*==========================|Light+vectors|=========================*/
 .vectors {
   display: none;
@@ -185,6 +187,13 @@
 }
 .yacht-card-tab tr td:nth-child(1) {
   text-transform: uppercase;
+}
+.picture-box{
+  overflow: hidden;
+}
+.yacht-card:focus .picture-box img,
+.yacht-card:hover .picture-box img{
+  transform: scale(1.1);
 }
 /*============================|adoptation|===========================*/
 @media only screen and (max-width: 320px) {
