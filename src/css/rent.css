@@ -32,6 +32,17 @@
   }
 }
 
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+/* Для красного лейбла */
+label.invalid {
+  color: red;
+}
+
 .rent-txt {
   font-size: 36px;
   font-weight: 500;
@@ -115,6 +126,8 @@
 .rent-input {
   height: 33px;
 }
+
+
 @media only screen and (min-width: 768px) {
   .rent-input {
     height: 35px;
@@ -131,8 +144,6 @@
   }
 }
 
-.rent-yacht-input {
-}
 .rent-lable {
   position: absolute;
   top: 0;
